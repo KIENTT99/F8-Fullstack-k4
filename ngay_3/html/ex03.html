@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <style>
+        .button {
+            margin-top: 10px;
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <table width="30%" border="0">
+        <tr>
+            <td><label for="name">Username:</label></td>
+            <td><input type="text" name="name" id="text" /></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" name="password" id="text"  /></td>
+        </tr>
+        <tr>
+            <td><label for="City">City of Emploument:</label></td>
+            <td><input type="text" name="City" id="text" /></td>
+        </tr>
+        <tr>
+            <td><label for="provinces">Web server</label></td>
+            <td>
+                <select name="provinces" id="provinces">
+                    <option value="">choosea a server</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                </select>
+            </td>
+           
+        </tr>
+        <tr>
+            <td></td>
+            <td ><label><input type="radio" name="radio" value="0"/>Admin</label></td>
+        </tr>
+        <tr>
+            <td> <label >Please specify your role</label></td>
+            <td><label><input type="radio" name=" radio" value="1"/>Engineer</label></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label><input type="radio" name=" radio" value="2"/>Manager</label></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label><input type="radio" name=" radio" value="3"/>Guest</label></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label><input type="checkbox" name="radio" value="0"/>Mail</label></td>
+        </tr>
+        <tr>
+            <td><label>Single Sign-on to the following</label></td>
+            <td><label><input type="checkbox" name="Single" value="1"/>Payroll</label></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label><input type="checkbox" name="Single" value="2"/>Self-Server</label></td>
+        </tr>
+    </table>
+    <div class="button">
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+    </div>
+</body>
+</html>
