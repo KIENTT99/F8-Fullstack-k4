@@ -1,0 +1,40 @@
+.form-subscribe {
+    padding: 2% 5%;
+    justify-content: center;
+    background-color: #859fba;
+    border-radius: 10px;
+}
+
+.form-subscribe h2 span {
+    color: burlywood;
+}
+
+.form-subscribe input {
+    width: 270px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-subscribe button {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: yellow;
+}
+
+.form-subscribe:hover input[type="email"]::placeholder {
+    color: burlywood;
+}
+
+.form-subscribe:hover input {
+    background-color: #ddd;
+}
+
+.form-subscribe:hover button {
+    background-color: burlywood;
+    color: #fff;
+}

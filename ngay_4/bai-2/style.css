@@ -1,0 +1,42 @@
+.booking {
+    border: solid;
+    border-radius: 10px;
+    width: 700px;
+    height: 500px;
+    margin-left: 400px;
+}
+
+.booking p {
+    margin-left: 40%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+.booking h1 {
+    margin-left: 20%;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 55px;
+    color: rgb(64, 39, 6);
+}
+
+.booking .text {
+    margin: 20px 35px;
+}
+
+.booking input {
+    width: 300px;
+    height: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+.booking button {
+    width: 310px;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 20px;
+    color: aliceblue;
+}
