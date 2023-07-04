@@ -1,0 +1,89 @@
+.title {
+    text-align: center;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.box {
+    width: 250px;
+    height: 300px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 30px;
+    background-color: rgb(235, 244, 244);
+}
+
+.item {
+    width: 250px;
+    height: 300px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(235, 244, 244);
+}
+
+.contact {
+    width: 250px;
+    height: 300px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 30px;
+    background-color: rgb(235, 244, 244);
+}
+
+.box i {
+    margin-top: 20px;
+    margin-left: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    color: rgb(240, 213, 12);
+}
+
+.item i {
+    margin-top: 20px;
+    margin-left: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    color: rgb(240, 213, 12);
+}
+
+.contact i {
+    margin-top: 20px;
+    margin-left: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    color: rgb(240, 213, 12);
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    background-color: rgb(220, 197, 22);
+    color: aliceblue;
+    height: 40px;
+    width: 100px;
+    margin-left: 80px;
+}

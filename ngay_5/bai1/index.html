@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <link rel="stylesheet" href="../bai1/style.css">
+    <script src="https://kit.fontawesome.com/c8b23c3fd4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form class="form-there">
+        <h1>Hey there</h1>
+        <span class="text"><b>we'd like to hear from you.</b> Send us your message or just say hy with our contact form
+            or directly
+            via phone,we love to chat.</span>
+        <div class="contact">
+            <span class="contact-icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+            <input type="text" placeholder="Your name" class="contact-input" />
+            <span class="contact-span">Enter your name</span>
+        </div>
+        <div class="contact">
+            <span class="contact-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+            <input type="email" placeholder="your@domain.com" class="contact-input" />
+            <span class="contact-span">Enter your email</span>
+        </div>
+        <div class="contact">
+            <span class="contact-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+            <input type="number" placeholder="+1900000" class="contact-input" />
+            <span class="contact-span">Enter your number</span>
+        </div>
+        <div class="contact">
+            <span class="contact-icon"><i class="fa fa-book" aria-hidden="true" class="contact-input"></i></span>
+            <select>
+                <option value="0">Subject</option>
+                <option value="1">java</option>
+                <option value="2">php</option>
+                <option value="3">python</option>
+            </select>
+        </div>
+        <div class="contact-message-flex" style="display: flex;">
+            <span class="contact-icon"><i class="fa fa-commenting-o" aria-hidden="true"></i></span>
+            <textarea type="message" placeholder="Message" class="contact-message"></textarea>
+           
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" id="check">
+                <span>Send me a copy of this message</span>
+            </label>
+            <button type="submit" class="btn">SEND</button>
+        </div>
+    </form>
+</body>
+
+</html>

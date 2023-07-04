@@ -1,0 +1,115 @@
+body {
+    border: 2px solid;
+    width: 700px;
+    height: 800px;
+    font-size: 20px;
+}
+
+.form-there {
+    margin-left: 50px;
+}
+
+h1 {
+    font-family: Florence, cursive;
+    font-size: 50px;
+}
+
+.text>b {
+    color: red;
+}
+
+.contact-input,
+select {
+    width: 500px;
+}
+
+.contact {
+    position: relative;
+    display: flex;
+    height: 55px;
+    padding: 10px 0px;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+.contact-icon-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 50px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+.contact-message {
+    width: 500px;
+    height: 200px;
+}
+
+.contact-span {
+    display: none;
+    top: -55px;
+    left: 55px;
+    width: 140px;
+    height: 50px;
+    color: white;
+    background-color: #1d1a1ad6;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+}
+
+#check {
+    color: #33333366;
+    background-color: #333333;
+}
+
+.btn {
+    margin-left: 180px;
+    margin-top: 50px;
+    color: white;
+    background-color: red;
+    height: 40px;
+    width: 100px;
+    border: none;
+    font-size: 20px;
+}
+
+label>span {
+    color: #33333368;
+}
+
+.contact:hover input {
+    border: 2px solid;
+}
+
+.contact:hover .contact-icon {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.821);
+}
+
+.contact:hover select {
+    border: 2px solid;
+}
+
+.contact-message:hover {
+    border: 2px solid;
+}
+
+.contact-message-flex:hover .contact-icon {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.821);
+}
+
+input:focus+.contact-span {
+    display: block;
+}
+

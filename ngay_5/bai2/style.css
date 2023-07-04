@@ -1,0 +1,45 @@
+.title label {
+    display: flex;
+    align-items: center;
+    background-color: rgb(235, 107, 16);
+    height: 40px;
+}
+
+.title {
+    margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    color: aliceblue;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.icon-minus {
+    display: none;
+}
+
+.content {
+    font-style: italic;
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.title input:checked~label .icon-minus {
+    display: inline-block;
+}
+
+.title input:checked~label .icon-plus {
+    display: none;
+}
+
+.title input:checked~.content {
+    display: block;
+}
