@@ -1,11 +1,13 @@
 .title {
     text-align: center;
 }
+
 .main {
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
+
 .box {
     width: 250px;
     height: 300px;
@@ -32,32 +34,8 @@
     background-color: rgb(235, 244, 244);
 }
 
-.box i {
-    margin-top: 20px;
-    margin-left: 95px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid;
-    border-radius: 50px;
-    width: 60px;
-    height: 60px;
-    color: rgb(240, 213, 12);
-}
-
-.item i {
-    margin-top: 20px;
-    margin-left: 95px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid;
-    border-radius: 50px;
-    width: 60px;
-    height: 60px;
-    color: rgb(240, 213, 12);
-}
-
+.box i,
+.item i,
 .contact i {
     margin-top: 20px;
     margin-left: 95px;
@@ -86,4 +64,10 @@ p {
     height: 40px;
     width: 100px;
     margin-left: 80px;
+}
+
+.box:hover,
+.contact:hover,
+.item:hover {
+    zoom: 110%;
 }
