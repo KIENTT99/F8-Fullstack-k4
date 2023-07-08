@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+body {
+    background-color: #ebf5fe;
+    font-family: "Roboto", sans-serif;
+}
+
+.service_table {
+    display: flex;
+}
+
+.service_icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.service_table_list {
+    border: 2px solid transparent;
+    width: 350px;
+    height: 250px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.service_icon>i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    color: rgb(241, 240, 240);
+}
+
+a {
+    text-decoration: none;
+}
+
+.service_icon>.fa-pencil {
+    background-color: #ff9a3b;
+    background-image: linear-gradient(241deg, #ff9a3b 0%, #ff2525 60%);
+}
+
+.service_icon>.fa-calculator {
+    background-color: #20a824;
+    background-image: linear-gradient(90deg, #20a824 0%, #80bad0 100%);
+}
+
+.service_icon>.fa-line-chart {
+    background-color: #e09e75;
+    background-image: linear-gradient(62deg, #e09e75 0%, #f7e068 100%);
+}
+
+.service_icon>.fa-space-shuttle {
+    background-color: #b7bcff;
+    background-image: linear-gradient(295deg, #b7bcff 0%, #372bff 100%);
+}
+
+.service_icon>.fa-graduation-cap {
+    background-color: #a420ff;
+    background-image: linear-gradient(43deg, #a420ff 0%, #977bff 100%);
+}
+
+.service_icon>.fa-envelope-o {
+    background-color: #20a824;
+    background-image: linear-gradient(90deg, #20a824 0%, #69ff83 100%);
+}
+
+.service_table_list:hover {
+    border: 2px solid red;
+    zoom: 102%;
+}
+
+.service_text {
+    margin-top: 15px;
+    color: #666;
+}
+
+.service_btn {
+    display: block;
+    margin-top: 35px;
+    font-size: 20px;
+}

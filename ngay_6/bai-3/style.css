@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+.form {
+    width: 100%;
+    height: 100vh;
+    padding: 80px;
+    background-image: url(../bai-3/IMG/login-bg2.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.form_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 800px;
+    height: 400px;
+    margin-left: 300px;
+}
+
+.form_login_icon {
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 40%;
+    height: 100%;
+    padding-top: 50px;
+    background-color: #ff574d;
+}
+
+.form_login_item {
+    border: none;
+    width: 60%;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+
+.icon_btn {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    color: #ff574d;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 3px;
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: #e22e24d4;
+}
+
+ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+h1>b {
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    color: #e22e24d4;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 b {
+    color: #e22e24d4;
+}
+
+.item_input {
+    display: block;
+    width: 400px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.703);
+}
+
+.item_checkbox {
+    margin-left: 40px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.703);
+}
+
+.item_checkbox a {
+    margin-left: 150px;
+}
+
+.item_btn {
+    width: 400px;
+    height: 40px;
+    margin-left: 39px;
+    margin-top: 20px;
+    background-color: #ff574d;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    color: white;
+}
+
+.form_login_item_1 {
+    margin-top: 50px;
+}
+
+.form_login_item>.last {
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+    color: rgba(0, 0, 0, 0.703);
+}
+
+.form_login_item_1 div input:not([type="checkbox"]) {
+    padding-left: 15px;
+}
+
+/* .betweet {
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: #ff574d;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 590px;
+} */
+.form_login_icon::after {
+    content: "\f061";
+    display: inline-block;
+    color: #ff574d;
+    font-family: "Font Awesome 5 Free";
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    font-weight: 900;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 220px;
+    left: 675px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
