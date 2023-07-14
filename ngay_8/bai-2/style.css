@@ -178,3 +178,8 @@ img {
     font-weight: bold;
     padding-top: 15px;
 }
+
+.form {
+    height: 350px;
+    overflow: auto;
+}
