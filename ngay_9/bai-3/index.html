@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <link rel="stylesheet" href="../bai-3/style.css">
+</head>
+
+<body>
+    <header class="form">
+        <div class="form__title">
+            <h1>Drop Us a Line</h1>
+            <p>Reach out to us from our contact form and we get back to you shortly</p>
+        </div>
+        <nav class="form__login">
+            <div class="form__login-address">
+                <label for="first-name" class="name">
+                    <input type="text" id="first-name">
+                    <span>First Name *</span>
+                </label>
+                <label for="last-name" class="name">
+                    <input type="text" id="last-name">
+                    <span>Last Name *</span>
+                </label>
+            </div>
+            <div class="form__login-address">
+                <label for="email" class="name">
+                    <input type="email" id="email">
+                    <span>Email *</span>
+                </label>
+                <label for="department" class="name">
+                    <select name="department" id="department">
+                        <option value="0"></option>
+                        <option value="1">Select a department</option>
+                        <option value="2">Sales</option>
+                        <option value="3">Marketing</option>
+                        <option value="4">Cusmer Support</option>
+                    </select>
+                    <span>Sales</span>
+                </label>
+            </div>
+            <div class="form__login-address">
+                <label for="message" class="message">
+                    <textarea name="Message" id="message" cols="94" rows="10"></textarea>
+                    <span>Message *</span>
+                </label>
+            </div>
+        </nav>
+        <div class="form__btn">
+            <button type="submit" class="btn">Send message</button>
+        </div>
+    </header>
+</body>
+
+</html>

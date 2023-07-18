@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    font-family: 'Inter', sans-serif;
+}
+
+.layout-list {
+    display: flex;
+    margin: 30PX;
+    justify-content: center;
+    gap: 30px;
+}
+
+.layout-list__content {
+    border: 1PX solid rgba(0, 0, 0, 0.353);
+    width: 300PX;
+    height: 220px;
+    padding: 20px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.layout-list__content>i {
+    font-size: 2rem;
+    color: rgba(210, 105, 30, 0.593);
+    margin-top: 30px;
+}
+
+.content {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.818);
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.content h3 {
+    transition: all 0.5s ease;
+}
+
+.content p {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.589);
+    transition: all 0.5s ease-in;
+}
+
+.last {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.4s ease;
+}
+
+.last i {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.last i:hover {
+    color: rgba(210, 105, 30, 0.593);
+    background: white;
+}
+
+.layout-list__content:hover i {
+    transform: scale(0);
+}
+
+.layout-list__content:hover .content h3,
+.layout-list__content:hover .content p {
+    transform: translateY(-60px);
+    color: #fff;
+}
+
+.layout-list__content:hover {
+    background: rgba(172, 140, 125, 0.863);
+    color: #fff;
+}
+
+.layout-list__content:hover .last {
+    display: flex;
+    transform: translateY(-30px);
+}
+
+.layout-list__content:hover .last i {
+    display: flex;
+    transform: translateY(-1px);
+}
+
+.layout-list__content::before {
+    content: "";
+    position: absolute;
+    display: block;
+    inset: 0;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+
+.layout-list__content:hover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(../bai-2/img/anh.jpg) no-repeat 0 0 / cover;
+    z-index: -1;
+}
+
+.layout-list__content:hover::before {
+    border: 1px solid rgba(255, 255, 0, 0.452);
+    transform: scale(0.9);
+}

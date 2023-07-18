@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    font-family: 'Montserrat', sans-serif;
+    width: 900px;
+    height: 550px;
+    border: 1px solid;
+    border-radius: 15px;
+    margin: 30px auto;
+}
+
+.form__title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form__title h1 {
+    color: rgba(0, 0, 0, 0.784);
+}
+
+.form__title p {
+    color: rgba(0, 0, 0, 0.621);
+    margin-top: 10px;
+}
+
+.form__login-address {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+input {
+    width: 350px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    border-radius: 5px;
+    padding: 20px;
+
+}
+
+select {
+    width: 350px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    border-radius: 5px;
+}
+
+textarea {
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.form__btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    color: rgba(240, 248, 255, 0.886);
+    font-weight: bold;
+    background-color: rgba(0, 0, 255, 0.675);
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+}
+
+.name {
+    position: relative;
+}
+
+.name span {
+    position: absolute;
+    left: 23px;
+    top: 40%;
+    color: rgba(0, 0, 0, 0.314);
+    font-size: 0.8rem;
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+    transition: all .3s;
+}
+
+.message {
+    position: relative;
+}
+
+.message span {
+    position: absolute;
+    left: 23px;
+    top: 10%;
+    color: rgba(0, 0, 0, 0.314);
+    font-size: 0.8rem;
+    font-weight: bold;
+    user-select: none;
+    transition: all .3s;
+}
+
+.name input:focus+span {
+    top: 10%;
+    left: 20px;
+}
+
+.message textarea:focus+span {
+    top: 3%;
+    left: 20px;
+}
