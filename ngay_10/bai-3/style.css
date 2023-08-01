@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color:rgba(0, 0, 0, 0.738);
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+  .mail-wrap {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 400px;
+    height: 200px;
+    background-color: #cf4a43;
+    transition: all 0.2s linear;
+  }
+  .mail-wrap:hover {
+    transform: translateY(50px);
+  }
+  .mail-wrap:hover .top {
+    height: calc(100% + 150px);
+  }
+  .mail-wrap:hover .letter {
+    height: 180%;
+  }
+  .mail-wrap .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #e15349;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  }
+  .mail-wrap .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e95f55;
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+  }
+  .mail-wrap .top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #cf4a43;
+    clip-path: polygon(0 42%, 50% 0, 100% 42%, 100% 100%, 0% 100%);
+    z-index: -1;
+    transition: height 0.2s linear;
+  }
+  .letter {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    height: 40%;
+    transition: height 0.2s linear;
+    transition-delay: 0.2s;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .row {
+    display: flex;
+    gap: 25px;
+  }
+  .row .col {
+    height: 10px;
+    width: 25px;
+    background-color: #cf4a43;
+    transform: skewX(-40deg);
+  }
+  
+  .letter-top {
+    margin-top: 20px;
+    margin-left: 12px;
+    width: 130px;
+    height: 20px;
+    background-color: #cf4a43;
+  }
+  .letter-bottom {
+    margin-top: 20px;
+    margin-left: 12px;
+    width: 80px;
+    height: 20px;
+    background-color: #cf4a43;
+  }
+  .letter-circle {
+    margin-top: 80px;
+    margin-left: 250px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #cf4a4356;
+  }
+  .shawdow {
+    position: relative;
+    top: 50%;
+    left: calc(50% - 250px);
+    transform: rotateX(60deg);
+    width: 500px;
+    height: 100px;
+    background-color: #17181bad;
+    border-radius: 50%;
+    transition: transform 0.25s linear;
+  }
+  .mail-wrap:hover ~ .shawdow {
+    transform: rotateX(70deg) scale(0.5);
+  }
+  

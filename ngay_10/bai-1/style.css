@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #05a8f5;
+    --white-color: #fff;
+    --transitions-primary: all 0.3s linear;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu {
+    position: relative;
+    background: var(--primary-color);
+    height: 100vh;
+}
+
+.menu-title {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+}
+
+.menu-title h1 {
+    color: var(--white-color);
+    font-size: 5.5rem;
+}
+
+.menu-title p {
+    color: rgba(255, 255, 255, 0.596);
+    padding-top: 30px;
+}
+
+.menu-title p span {
+    font-size: 3rem;
+}
+
+.menu-content {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-bottom-right-radius: 99px;
+    background-color: var(--white-color);
+    transition: var(--transitions-primary);
+}
+
+.menu-content__left,
+.menu-content__bars {
+    position: absolute;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 25px;
+    color: var(--primary-color);
+}
+
+.menu-content__left {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.menu input:checked+.menu-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.menu input:checked+.menu-content .menu-content__bars {
+    display: none;
+}
+
+.menu input:checked+.menu-content .menu-content__left {
+    visibility: visible;
+    opacity: 1;
+    transform: rotate(180deg);
+}
+
+.menu input:checked+.menu-content .menu-content__item {
+    display: block;
+}
+
+.menu-content__item {
+    width: 20%;
+    padding-top: 100px;
+    display: none;
+}
+
+.menu-content__item li {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.menu-content__item li a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 10px 30px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.menu-content__item li a:focus {
+    background-color: rgba(0, 0, 0, 0.142);
+    color: rgba(0, 0, 0, 0.81);
+}
