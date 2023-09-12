@@ -2,8 +2,6 @@ var todo = document.querySelector(".todo-app");
 var form = document.querySelector(".todo-form");
 var input = document.querySelector(".todo-input");
 
-
-
 function addTodoList(valueInput) {
     return `<div class="todo-item">
   <p class="">${valueInput}</p>
@@ -23,17 +21,6 @@ form.addEventListener("submit", function (e) {
         input.value = "";
     }
 });
-
-
-todo.addEventListener("click", function (e) {
-    console.log(e.target.className);
-    if (e.target.className === "") {
-        e.target.classList.add("checked");
-    } else if (e.target.className == "checked") {
-        e.target.classList.remove("checked");
-    }
-});
-
 
 todo.addEventListener("click", function (e) {
     var valueInput = document.querySelector(".todo-item p");
@@ -55,6 +42,15 @@ todo.addEventListener("click", function (e) {
         e.target.parentElement.remove();
         var valueEdit = addTodoList(inputEdit.value);
         todo.insertAdjacentHTML("beforeend", valueEdit);
+    }
+});
+
+todo.addEventListener("click", function (e) {
+    console.log(e.target.className);
+    if (e.target.className === "") {
+        e.target.classList.add("checked");
+    } else if (e.target.className == "checked") {
+        e.target.classList.remove("checked");
     }
 });
 
