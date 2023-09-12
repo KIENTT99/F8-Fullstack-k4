@@ -82,7 +82,7 @@ var arr = [
 ];
 var newArr = [];
 
-myNested = function (arr) {
+Nested = function (arr) {
 
     arr.forEach(function (item) {
         item.children = [];
@@ -106,7 +106,7 @@ myNested = function (arr) {
     return newArr
 }
 
-console.log(myNested(arr));
+console.log(Nested(arr));
 
 //END Bài 3
 
